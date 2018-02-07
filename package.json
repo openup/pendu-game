@@ -8,7 +8,10 @@
     "build": "webpack --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:openup/pendu-game.git"
+  },
   "author": "Karim",
   "license": "IAD",
   "devDependencies": {

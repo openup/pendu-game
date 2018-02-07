@@ -1,0 +1,69 @@
+.missed-word-holder{
+	font-size: 32px;
+    margin: 32px auto;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+
+.letters{
+	list-style: none;
+	font-size: 12px;
+	max-width: 80%;
+	display: block;
+	text-align: center;
+	> li{
+		display: inline-block;
+		padding: 3px 6px;
+		border-radius: 3px;
+		margin: auto 2px;
+		color : #fff;
+		background: #00a4df;
+		transition: all linear .3s;
+	    &:not(.clicked){
+	    	cursor: pointer;
+           &:hover{
+         background : #108db2;
+         box-shadow: 0 0 3px 0 #eaeaea;
+         transform : scale(1.3);
+	    }
+	}
+
+	&.clicked{
+        background : #eaeaea;
+        color: #666;
+        pointer-events: none;
+	}
+}
+}
+
+.ngb-essai{
+       font-size: 22px;
+       color: #333;
+       font-weight: bold;
+       margin: 20px auto;
+}
+
+.isguessed{
+	font-size: 26px;
+	> button{
+		margin-top: 20px;
+		font-size: 16px;
+	}
+
+}
+
+.block.text-right{
+padding-top : 30px;
+	a{
+		font-size: 13px;
+		line-height: 18px;
+		text-decoration : none;
+		color : #999;
+		transiton : color linear .3s;
+		&:hover{
+		color : #00a4df;
+		}
+	}
+}

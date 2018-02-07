@@ -1,0 +1,31 @@
+<div class="container text-center">
+
+	<div class="missed-word-holder text-center">
+	{{$ctrl.word|hideWrong:$ctrl.letters}}
+	</div>
+	
+	<div class="block text-center isguessed" ng-if="$ctrl.guessed">
+	<strong class="block text-center text-danger" >
+	Félicitation vous avez gagné !
+	</strong>
+	<button type="button" ng-click="$ctrl.loadGame()" class="btn btn-xs btn-primary">rejouer ?</button>
+	</div>
+
+	<ul class="letters" ng-if="$ctrl.showletters">
+	<li ng-repeat="l in $ctrl.letters" ng-class="{'clicked':l.clicked == true}" ng-click="$ctrl.LetterClicked(l);">
+	{{l.l}}
+	</li>
+	</ul>
+
+	<div class="ngb-essai block text-center" ng-if="!$ctrl.guessed">
+	<span ng-if="$ctrl.fail">
+	<strong class="block text-center">Vous avez perdu !</strong>
+	<button type="button" ng-click="$ctrl.loadGame()" class="btn btn-xs btn-primary">rejouer ?</button>
+	</span>
+	<span ng-if="!$ctrl.fail">{{$ctrl.count}} / {{$ctrl.maxEssai}}</span>
+	</div>
+
+<div class="block text-right">
+<a ui-sref="login">Quitter</a>
+</div>
+</div>

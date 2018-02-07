@@ -1,0 +1,38 @@
+// for fixing of loading bootstrap icon files
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+
+/*===========================================
+===== Loading Custom Setup of Variables =====
+=============================================*/
+@import 'vars/typography';
+@import 'vars/navbar';
+
+
+/*===========================================
+========= Loading Bootstrap Styles ==========
+=============================================*/
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+/*===========================================
+========= Custom Styles ==========
+=============================================*/
+
+.block{
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.login-box{
+	border-radius: 4px;
+	margin: 15px 5px;
+	border: 1px solid #00a4df;
+	background: #2196f3;
+    color: #fff;
+    padding: 20px;
+
+    .disabled{
+    pointer-events: none;
+    }
+}

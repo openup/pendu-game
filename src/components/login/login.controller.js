@@ -1,8 +1,6 @@
 export default class LoginController {
-	constructor($log) {
+	constructor() {
 		'ngInject';
-
-		this.$log = $log;
 	}
 
 	$onInit = () => {

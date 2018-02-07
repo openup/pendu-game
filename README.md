@@ -8,10 +8,10 @@ Jeu de pendu en AngularJs 1.5 , ES6, Bootstrap
 
 ## Instalation
 
-```sh
-npm install
-npm start
-```
+1. Clone Project.
+2. Do `yarn install` to install all dependencies.
+3. Finally `yarn start` to run project.
+
 For build
 ```sh
 npm build

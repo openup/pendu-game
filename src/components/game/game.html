@@ -1,6 +1,6 @@
 <div class="container text-center">
 
-	<div class="missed-word-holder text-center">
+	<div class="missed-word-holder text-center" ng-class="{'final':$ctrl.guessed}">
 	{{$ctrl.word|hideWrong:$ctrl.letters}}
 	</div>
 	

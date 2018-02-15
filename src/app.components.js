@@ -4,5 +4,5 @@ import './components/login';
 import './components/game';
 
 export default {
-	controller: controller
+	
 }
